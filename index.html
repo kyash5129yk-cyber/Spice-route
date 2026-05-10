@@ -1,0 +1,84 @@
+// Replace your old MENU_INIT with this
+
+const MENU_INIT = [
+  { id: 1,  name: "Samosa (2 pcs)",       cat: "Starters",  price: 79,  desc: "Crispy pastry stuffed with spiced potatoes & peas, served with mint chutney", emoji: "🥟", stars: 4.9, avail: true },
+  { id: 2,  name: "Paneer Tikka",         cat: "Starters",  price: 249, desc: "Tandoor-grilled paneer cubes marinated in yogurt & Indian spices", emoji: "🧀", stars: 4.8, avail: true },
+  { id: 3,  name: "Veg Spring Rolls",     cat: "Starters",  price: 199, desc: "Crunchy rolls filled with fresh vegetables and served with spicy dip", emoji: "🥬", stars: 4.7, avail: true },
+  { id: 4,  name: "Papdi Chaat",          cat: "Starters",  price: 149, desc: "Crispy wafers topped with yogurt, chutneys & masala chickpeas", emoji: "🥗", stars: 4.9, avail: true },
+
+  { id: 5,  name: "Paneer Butter Masala", cat: "Mains",     price: 329, desc: "Creamy tomato gravy cooked with soft paneer cubes and butter", emoji: "🍛", stars: 5.0, avail: true },
+  { id: 6,  name: "Dal Makhani",          cat: "Mains",     price: 269, desc: "Slow-cooked black lentils simmered with cream and butter", emoji: "🫘", stars: 4.9, avail: true },
+  { id: 7,  name: "Veg Biryani",          cat: "Mains",     price: 299, desc: "Fragrant basmati rice cooked with vegetables and Indian spices", emoji: "🍚", stars: 4.8, avail: true },
+  { id: 8,  name: "Palak Paneer",         cat: "Mains",     price: 289, desc: "Fresh spinach gravy cooked with soft paneer cubes", emoji: "🥬", stars: 4.7, avail: true },
+  { id: 9,  name: "Chole Bhature",        cat: "Mains",     price: 219, desc: "Punjabi-style spicy chickpeas served with fluffy bhature", emoji: "🍲", stars: 4.9, avail: true },
+
+  { id: 10, name: "Garlic Naan",          cat: "Breads",    price: 59,  desc: "Soft naan bread topped with garlic butter", emoji: "🫓", stars: 4.8, avail: true },
+  { id: 11, name: "Butter Naan",          cat: "Breads",    price: 49,  desc: "Fresh tandoori naan brushed with melted butter", emoji: "🫓", stars: 4.7, avail: true },
+  { id: 12, name: "Laccha Paratha",       cat: "Breads",    price: 69,  desc: "Flaky layered paratha cooked with desi ghee", emoji: "🥙", stars: 4.6, avail: true },
+
+  { id: 13, name: "Gulab Jamun",          cat: "Desserts",  price: 119, desc: "Soft milk-solid dumplings soaked in sugar syrup", emoji: "🟤", stars: 5.0, avail: true },
+  { id: 14, name: "Mango Kulfi",          cat: "Desserts",  price: 129, desc: "Traditional Indian frozen dessert with mango flavor", emoji: "🥭", stars: 4.9, avail: true },
+  { id: 15, name: "Kheer",                cat: "Desserts",  price: 99,  desc: "Creamy rice pudding flavored with cardamom and saffron", emoji: "🍮", stars: 4.8, avail: true },
+
+  { id: 16, name: "Mango Lassi",          cat: "Drinks",    price: 99,  desc: "Refreshing yogurt drink blended with mango pulp", emoji: "🥭", stars: 5.0, avail: true },
+  { id: 17, name: "Masala Chai",          cat: "Drinks",    price: 49,  desc: "Traditional Indian tea brewed with aromatic spices", emoji: "☕", stars: 4.9, avail: true },
+  { id: 18, name: "Rose Sharbat",         cat: "Drinks",    price: 79,  desc: "Refreshing rose-flavored chilled drink", emoji: "🌹", stars: 4.6, avail: true },
+];
+
+
+// Replace ORDERS_INIT with this
+
+const ORDERS_INIT = [
+  {
+    id:"ORD-001",
+    customer:"Rahul M.",
+    items:[
+      {name:"Paneer Butter Masala",qty:1,price:329},
+      {name:"Garlic Naan",qty:2,price:59},
+      {name:"Mango Lassi",qty:1,price:99}
+    ],
+    total:546,
+    status:"delivered",
+    time:"2:30 PM",
+    addr:"12 Patel Nagar"
+  },
+
+  {
+    id:"ORD-002",
+    customer:"Priya S.",
+    items:[
+      {name:"Veg Biryani",qty:1,price:299},
+      {name:"Mango Lassi",qty:1,price:99}
+    ],
+    total:398,
+    status:"on_the_way",
+    time:"3:15 PM",
+    addr:"45 MG Road"
+  },
+
+  {
+    id:"ORD-003",
+    customer:"Ankit K.",
+    items:[
+      {name:"Paneer Tikka",qty:1,price:249},
+      {name:"Dal Makhani",qty:1,price:269}
+    ],
+    total:518,
+    status:"preparing",
+    time:"3:45 PM",
+    addr:"8 Civil Lines"
+  },
+
+  {
+    id:"ORD-004",
+    customer:"Sneha R.",
+    items:[
+      {name:"Samosa (2 pcs)",qty:2,price:79},
+      {name:"Masala Chai",qty:2,price:49}
+    ],
+    total:256,
+    status:"pending",
+    time:"4:00 PM",
+    addr:"22 Lajpat Nagar"
+  },
+];
